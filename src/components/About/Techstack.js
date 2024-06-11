@@ -1,35 +1,33 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
+  DiPhp
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
+  SiTailwindcss,
+  SiCanva,
+  SiSass 
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaHtml5, FaCss3Alt, FaBootstrap} from 'react-icons/fa';
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FaHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <FaCss3Alt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -38,13 +36,16 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <FaBootstrap />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <SiSass />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <SiCanva />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -53,16 +54,13 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <DiPhp/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
       </Col>
     </Row>
   );
